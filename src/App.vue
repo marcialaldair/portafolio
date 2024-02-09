@@ -9,7 +9,7 @@
           <!-- <router-link @click="scrollToSection('contact')" class="nav-link" :class="{ 'active-link': currentSection === 'contact' }">Contacto</router-link> -->
         </div>
     </div>
-    <button class="download-cv right-aligned">Descargar CV</button>
+    <button class="download-cv right-aligned" @click="descargarCV">Descargar CV</button>
   </nav>
         <div class="banner" id="inicio">
         <div class="banner-text">
@@ -139,6 +139,15 @@ export default {
     },
   },
   methods: {
+    descargarCV() {
+      // Crear un elemento <a> para descargar el archivo
+      const link = document.createElement('a');
+      link.href = '/public/CV_Aldair_Marcial_Reyes.pdf';
+      link.download = 'CV_Aldair_Marcial_Reyes.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    },
     scrollToSection(sectionId) {
       const element = document.getElementById(sectionId);
       if (element) {

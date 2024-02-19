@@ -130,7 +130,7 @@
 <script>
 import ExperienceCard from '@/components/ExperienceCard.vue';
 import CardProject from '@/components/CardProject.vue';
-import FileSaver from 'file-saver';
+// import FileSaver from 'file-saver';
 
 export default {
   components: {
@@ -144,14 +144,13 @@ export default {
   },
   methods: {
     descargarCV() {
-      fetch('public/CV_Aldair_Marcial_Reyes.pdf', {
-        responseType: 'arraybuffer'
-      })
-      .then((response) => {
-        console.log(response);
-        const blob = new Blob([response.data], { type: 'application/pdf' });
-        FileSaver.saveAs(blob, 'CV_Aldair_Marcial_Reyes.pdf');
-      });
+      // Crear un elemento <a> para descargar el archivo
+      const link = document.createElement('a');
+      link.href = '/ProyectosVUE/portafolio/public/CV_Aldair_Marcial_Reyes.pdf';
+      link.download = 'CV_Aldair_Marcial_Reyes.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
     },
     scrollToSection(sectionId) {
       const element = document.getElementById(sectionId);

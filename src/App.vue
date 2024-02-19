@@ -145,7 +145,8 @@ export default {
     descargarCV() {
       // Crear un elemento <a> para descargar el archivo
       const link = document.createElement('a');
-      link.href = '/public/CV_Aldair_Marcial_Reyes.pdf';
+      const rutaAbsoluta = window.location.origin + '/public/CV_Aldair_Marcial_Reyes.pdf';
+      link.href = rutaAbsoluta;
       link.download = 'CV_Aldair_Marcial_Reyes.pdf';
       document.body.appendChild(link);
       link.click();
@@ -538,6 +539,28 @@ export default {
         width: 100%;
         float: none;
     }
+}
+
+@media screen and (max-width:880px){
+  .experiencia{
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width:880px){
+  .acercademi{
+    flex-direction: column;
+  }
+  .acercademi img{
+    width: 400px;
+  }
+}
+
+@media screen and (max-width:880px){
+  ExperienceCard{
+    padding-bottom: 100px;
+  }
 }
 
 

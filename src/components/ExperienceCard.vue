@@ -137,4 +137,10 @@ export default {
   height: 30px;
 }
 
+@media screen and (max-width:880px){
+  .experience-card{
+    margin-bottom: 20px;
+  }
+}
+
 </style>

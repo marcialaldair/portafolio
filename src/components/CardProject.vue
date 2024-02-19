@@ -122,7 +122,7 @@
     display: inline-block;
     padding: 12px 25px;
     text-decoration: none;
-    background: #80DBFF;
+    background: #F1916D;
     color: #ebebeb;
     font-weight: 500;
   }

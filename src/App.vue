@@ -88,6 +88,8 @@
       <div class="misc">
         <img src="./assets/pandas_white.svg" title="pandas">
         <img src="./assets/NumPy.svg" title="NumPy">
+        <img src="./assets/postman.png" title="Postman">
+        <img src="./assets/wordpress.png" title="Wordpress">
       </div>
       <div class="sections">
         <p>Proyectos</p>
@@ -109,6 +111,7 @@
       <div class="certificates">
         <img src="./assets/ilustracion_pd.png">
         <img src="./assets/diseño_IU.png">
+        <img src="./assets/diploma_wordpress.png">
       </div>
       <!-- <div class="sections" id="contact">
         <p>Contacto</p>
@@ -156,7 +159,6 @@ export default {
     },
     handleScroll() {
       const scrollPosition = window.scrollY;
-      // Ajusta estos valores según la distribución de tus secciones y el diseño de tu página
       const aboutPosition = document.getElementById('about').offsetTop - 3;
       const experiencePosition = document.getElementById('experience').offsetTop - 3;
       // const contactPosition = document.getElementById('contact').offsetTop - 3 ;
@@ -186,7 +188,7 @@ export default {
           imageSrc: 'tantan.png',
           imageAlt: 'Descripción 1',
           date: 'Enero - Junio 2022 ',
-          alternativeText:'Esta empresa se desarrolla credenciales digitales para diferentes instituciones por medio de blockchain, yo me dedicaba principalemte a la atención de incidentes por parte de los clientes por lo cual debia acceder de forma recurrente a la base de datos en DBeaver. Tambien me dedicaba al diseño y mejora de algunas credenciales por lo cual hacia cambios en HTML y CSS.',
+          alternativeText:'Esta empresa se especializa en el desarrollo de credenciales digitales para diversas instituciones mediante la tecnología blockchain. Mi responsabilidad principal consistía en gestionar incidentes reportados por los clientes, lo que implicaba acceder regularmente a la base de datos utilizando DBeaver. Además, participaba activamente en el diseño y mejora de las credenciales, lo que incluía realizar modificaciones en HTML y CSS para optimizar su apariencia y funcionalidad.',
           titleCard:'Tan Tan',
           tools:['html-5.png','css-3.png','gitlab.png','DBeaver.svg']
         },
@@ -194,7 +196,7 @@ export default {
           imageSrc: 'ebcomm.png',
           imageAlt: 'Descripción 1',
           date: 'Junio - Diciembre 2022',
-          alternativeText:'Esta empresa se dedica al desarrollo de e-commerce, yo estuve en el desarrollo de un proyecto de una tienda en linea en esta empresa fue donde mas contacto tuve con el desarrollo web en esta empresa usaba el modelo MVC para el desarrollo, en la parte de diseño usaba figma para realizar propuestas de diseño posteriormente las pasaba a HTML,CSS y JS con el framework de boostrap esto lo iba conectado en paralelo con PHP a una base de datos haciendo consultas SQL y finalmente subia los cambios con SVN.',
+          alternativeText:'La empresa se enfoca en el desarrollo de soluciones de e-commerce. Durante mi tiempo allí, lideré un proyecto de una tienda en línea. Esta experiencia me brindó una sólida exposición al desarrollo web, donde implementé el modelo MVC. Para el diseño, empleaba Figma para crear propuestas visuales, las cuales luego transformaba en código utilizando HTML, CSS y JS con el apoyo del framework Bootstrap. Este proceso se integraba con PHP para interactuar con una base de datos mediante consultas SQL. Finalmente, para gestionar versiones y subir cambios, utilizaba SVN.',
           titleCard:'EBCOMM',
           tools:['html-5.png','css-3.png','js.png','img_bootstrap.png','figma.png','svn.svg','mysql.png','php.png']
         },
@@ -202,7 +204,7 @@ export default {
           imageSrc: 'tenaris.png',
           imageAlt: 'Descripción 1',
           date: 'Febrero 2023 - Enero 2024',
-          alternativeText:"Esta empresa se dedica a la elaboración de tubos sin costura, yo estaba en el area de BI & Analytics tools; en esta area elabore diferentes tareas y desarrolle nuevas habilidades entre las tareas realizas fue el consumo de API's de purview para modificar datos en databricks y datalakes esto junto python y el manajo de archivos JSON, tambien hacia manipulación de datos con pandas y NumPy, finalmente tambien desarrolle algunos scripts en powershell para la automatización de algunas tareas",
+          alternativeText:"La empresa se centra en la fabricación de tubos sin costura. Mi rol se encontraba en el área de BI & Analytics tools, donde llevé a cabo una variedad de tareas que me permitieron desarrollar nuevas habilidades. Entre estas tareas, se incluyó el consumo de API's de Purview para realizar modificaciones en Databricks y datalakes, utilizando Python para el manejo de archivos JSON. Además, realizaba la manipulación de datos utilizando las bibliotecas Pandas y NumPy. Finalmente, desarrollé varios scripts en PowerShell para automatizar diversas tareas dentro del proceso.",
           titleCard:'Tenaris Tamsa',
           tools:['icons8-python-48 1.png','icons8-power-bi-48 1.png','icons8-microsoft-excel-2019-48 1.png','icons8-potencia-shell-48 1.png','Purview.svg','pandas_white.svg','NumPy.svg']
         },
@@ -237,7 +239,7 @@ export default {
 
 <style>
   body {
-    background-color: #001F3D;
+    background-color: #06142E;
     margin: 0;
     font-family: 'Nunito', sans-serif;
   }
@@ -251,7 +253,7 @@ export default {
     display: flex;
     justify-content: center; /* Alinea los elementos hacia los extremos */
     align-items: center; /* Alinea verticalmente al centro */
-    background: #001F3D;
+    background: #06142E;
   }
 
   .container{
@@ -325,66 +327,79 @@ export default {
 
   /* Estilos para el banner */
   .banner {
-    background:
-    linear-gradient(
-      to right,
-      rgb(0 0 0/ 0.5),
-      rgb(0 0 0/0)
-    ),
-    url('/src/assets/banner_3.jpeg');
-    background-size: cover;
-    background-position: center;
-    height: 735px;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    color: #F2F2F2;
-    text-align: center;
-  }
-/* 
-  .banner-gradient {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.5;
-    background: linear-gradient(110deg, #000 0%, rgba(0, 0, 0, 0.61) 53.43%, rgba(0, 0, 0, 0.00) 100.65%);
-  } */
+  background:
+  linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0)
+  ),
+  url('/src/assets/banner_3.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 95vh; /* Se ajusta a la altura de la ventana */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F2F2F2;
+  text-align: center;
+  position: relative;
+}
 
-  .banner-text {
-    max-width: 600px;
-  }
+.banner-text {
+  max-width: 90%;
+  padding: 0 20px; /* Añadido relleno para adaptarse a diferentes tamaños de pantalla */
+  position: absolute; /* Añadido */
+  bottom: 20px; /* Añadido */
+  left: 28%; /* Añadido */
+  transform: translateX(-50%); /* Añadido */
+}
 
+.banner-text h1 {
+  font-size: 7vw; /* Cambiado a vw para que sea responsive */
+  letter-spacing: 0.8vw; /* Cambiado a vw para que sea responsive */
+  margin-bottom: 1vw; /* Cambiado a vw para que sea responsive */
+  text-align: left;
+}
+
+.banner-text p {
+  font-size: 1.8vw; /* Cambiado a vw para que sea responsive */
+  margin-bottom: 3vw; /* Cambiado a vw para que sea responsive */
+  letter-spacing: 0.2vw; /* Cambiado a vw para que sea responsive */
+  text-align: left;
+}
+
+.colored-text {
+  color: #80dbff;
+}
+
+@media screen and (max-width: 768px) {
   .banner-text h1 {
-    font-size: 100px;
-    text-align: left;
-    letter-spacing: 8.32px;
-    max-width: 600px;
-    padding: 0px;
-    margin-bottom: 91px;
-    padding-left: 20px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    font-size: 6vw;
+    letter-spacing: 0.6vw;
+    margin-bottom: 4vw;
   }
 
   .banner-text p {
-    color: #F2F2F2;;
-    font-size: 25px;
-    margin-bottom: 60px;
-    padding-left: 20px;
-    text-align: left;
-    max-width: 1000px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    letter-spacing: 1.625px;
+    font-size: 1.5vw;
+    margin-bottom: 2vw;
+    letter-spacing: 0.15vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner-text h1 {
+    font-size: 10vw;
+    letter-spacing: 1vw;
+    margin-bottom: 6vw;
   }
 
-  .colored-text {
-  color: #80dbff;
+  .banner-text p {
+    font-size: 3vw;
+    margin-bottom: 4vw;
+    letter-spacing: 0.3vw;
   }
+}
+
 
 /* Estilos de las secciones del portfolio */
   .sections{
@@ -392,7 +407,7 @@ export default {
     text-align: center;
     justify-content: center;
     color: #80dbff;
-    font-size: 19px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 700;
     line-height: 84.9%; /* 27.168px */
@@ -447,6 +462,7 @@ export default {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     /* simbolos de herramientas */
@@ -472,6 +488,8 @@ export default {
       display: flex;
       flex-direction: row;
       align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .certificates{
@@ -481,6 +499,7 @@ export default {
       flex-direction: row;
       align-items: center;
       justify-content: center;
+      flex-wrap: wrap;
     }
 
     .certificates img{

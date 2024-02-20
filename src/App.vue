@@ -144,13 +144,13 @@ export default {
   },
   methods: {
     descargarCV() {
-      // Crear un elemento <a> para descargar el archivo
-      const link = document.createElement('a');
-      link.href = '/ProyectosVUE/portafolio/public/CV_Aldair_Marcial_Reyes.pdf';
-      link.download = 'CV_Aldair_Marcial_Reyes.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+        // Crear un elemento <a> para descargar el archivo
+        const link = document.createElement('a');
+        link.href = 'CV.pdf';
+        link.download = 'CV_Aldair_Marcial_Reyes.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     },
     scrollToSection(sectionId) {
       const element = document.getElementById(sectionId);
